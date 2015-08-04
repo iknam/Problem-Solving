@@ -1,0 +1,24 @@
+#include <map>
+#include <set>
+#include <stack>
+#include <queue>
+#include <cmath>
+#include <math.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	int i, j, k = 0;
+	
+	while (cin >> i >> j)
+	{
+		cout << k;
+		k++;
+	}
+	return 0;
+}

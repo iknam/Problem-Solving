@@ -1,0 +1,25 @@
+#include <map>
+#include <set>
+#include <cmath>
+#include <stack>
+#include <queue>
+#include <math.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	int i, albet[;
+	sting str;
+
+	cin >> str;
+
+	for (i = 0; i < str.length(); i++)
+	{
+
+	return 0;
+}

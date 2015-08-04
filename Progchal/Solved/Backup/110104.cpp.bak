@@ -1,0 +1,107 @@
+#include <map>
+#include <set>
+#include <stack>
+#include <queue>
+#include <cmath>
+#include <math.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <cstring>
+
+using namespace std;
+
+// draw all? maybe wrong
+// like histogram?
+// make one and one; 1 clear -> 2 attempt
+
+// analysis 1-case (3, 5)
+
+int main()
+{
+	int i, j, k, l, s;
+	string n;
+
+	while (true)
+	{
+		cin >> s >> n;
+		char sign[s + 2][2 * s + 3];
+
+		memset(sign, ' ', sizeof(sign));
+
+		if (s == 0 && n[0] == '0') break;
+
+		k = n.length();
+
+		// use for to | height size
+		// need 2 FOR height and width
+		// sign[0][j][i] = '|';
+		// @ s == 2 : frame '|' 1-2-1-2-1 and '-' 1-2-1
+		// @ s == 2 : call divided sign and construct of saved '|' 2, '-' 2
+		// @ s == 3 : '|' 1-3-1-3-1, '-' 1-3-1
+		// @ s == 3 ; '|' 3, '-' 3
+		// trash value?
+
+		// @ space prob
+	for (k
+		for (j = 0; j < (2 * s) + 3; j++)
+		{
+			for (i = 0; i < s + 2; i++) // 3-for?
+			{
+				// use switch, processing space like blank
+				switch (n[n.length() - k])
+				{
+					// point is here
+					case '0':
+						// if () 
+						// sign[(2 * s) + 2 - j][s + 1 - i] = '-';
+						// if ()
+						//  sign[j][i] = '|';
+						// cout << "yell";
+						break;
+					case '1':
+						// sign[0][j][(2 * s) + 4] = '|';
+						// for (l = 0; l < 3; l++)
+
+						// cout << ;
+						break;
+					case '2':
+						break;
+					case '3':
+						break;
+					case '4':
+						break;
+					case '5':
+						break;
+					case '6':
+						break;
+					case '7':
+						break;
+					case '8':
+						break;
+					case '9':
+						break;
+					default:
+						break;
+						// ...case
+				}
+				if (k > 0)
+				{
+					// cout << endl << n.length() - k << endl;
+					k--;
+				}
+				else
+				{
+					k = n.length();
+				}
+				cout << sign[j][i];
+			}
+			// k = n.length();
+			cout << endl;
+		}
+		cout << endl;
+	}
+
+	return 0;
+}

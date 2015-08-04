@@ -1,0 +1,63 @@
+#include <map>
+#include <set>
+#include <stack>
+#include <queue>
+#include <cmath>
+#include <math.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <cstdio>
+
+using namespace std;
+
+// why diff else if-else think about it
+
+int main()
+{
+	long int i, j, k, l, cnt = 1, max = 0;
+
+	while (scanf("%ld %ld", &i, &j) == 2) // this is wrong approach - no
+	{
+		l = i;
+		for (; i <= j; i++) // prob here i++ oper 1,10->i=9
+		{
+			k = i;
+			while(true){
+				if ((i % 2) == 0)
+				{
+					// cout << "work1";
+					cnt++;
+					i /= 2;
+					
+					//cout << endl << i << "i-val" << endl;
+				}
+				else if((i % 2) != 0)
+				{
+					// cout << "work2";
+					cnt++;
+					i = (i * 3) + 1;
+				}
+
+				//cout << i << endl;
+				
+				if (i == 1) break;
+				// break;
+				// tri-oper compare max value
+							
+			max = (cnt > max) ? cnt : max;
+			}
+			i = k;
+			
+
+			//cout << endl << max + 1 << endl;
+			cnt = 1;
+		}
+	// init prob
+			cout << l << " " << j << " " << max + 1 << endl;
+			max = 0;
+	}
+
+	return 0;
+}
