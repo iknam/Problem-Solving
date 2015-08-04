@@ -1,0 +1,23 @@
+#include <map>
+#include <set>
+#include <cmath>
+#include <stack>
+#include <queue>
+#include <math.h>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main()
+{
+	// 2*2 array?
+	int loop1, loop2, block[3][3];
+
+	for (loop1 = 0; loop1 < 3
+
+	
+	return 0;
+}
