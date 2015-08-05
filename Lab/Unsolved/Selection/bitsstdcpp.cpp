@@ -1,15 +1,13 @@
+//#include <iostream>
+//#include <vector>
 #include <bits/stdc++.h>
 
 using namespace std;
 
 int main()
 {
-	string str = "abcde";
-
-	sort(str.begin(), str.end(), greater<int>());
-
-	cout << str;
-
+//	vector<int> vi;
+	cout << "ASDF";
     return 0;
 }
 
