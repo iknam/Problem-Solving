@@ -10,7 +10,7 @@ int main()
 	double duration;
 	start = clock();
 	
-	// type here
+	
 
 	finish = clock();
 	duration = (double)(finish - start) / CLOCKS_PER_SEC;
