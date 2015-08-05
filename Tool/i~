@@ -1,0 +1,4 @@
+#!/bin/bash
+rm ~/Tool/in
+touch ~/Tool/in
+vi ~/Tool/in

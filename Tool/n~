@@ -1,0 +1,4 @@
+w
+#!/bin/bash
+g++ "$*"
+./a.out

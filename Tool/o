@@ -1,0 +1,6 @@
+#!/bin/bash
+g++ -std=c++11 "$*"
+./a.out < ~/Tool/in > ~/Tool/out
+cat ~/Tool/in
+cat ~/Tool/out
+

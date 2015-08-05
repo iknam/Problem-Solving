@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "don't overwrite"
+cp "$2".cpp ./Backup/"$2".cpp.bak
+if [ "$2" = "" ]; then
+echo "fault check argument"
+fi
+if [ "$1" = "def" ]; then
+cp /home/james/Tool/default.cpp "$2".cpp
+vi "$2".cpp
+elif [ "$1" = "clk" ]; then
+cp /home/james/Tool/clock.cpp "$2"_clk.cpp
+vi "$2"_clk.cpp
+fi
