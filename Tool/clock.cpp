@@ -9,13 +9,12 @@ int main()
 	int i, j, k;
 	int start = clock();
 	
-	for (i = 0; i < 3; i++)
+	for (i = 0; i < 300; i++)
 	{
-		for (j = 0; j < 3; j++)
+		for (j = 0; j < 30; j++)
 		{
-			for (k = 0; k < 3; k++)
+			for (k = 0; k < 30; k++)
 			{
-				cout << "t";
 			}
 		}
 	}
