@@ -21,6 +21,7 @@ int main()
 	sort(vi.begin(), vi.end());
 
 //	int a = *std::min_element(vi.begin(), vi.end());
+	//if (n == 1) cout << "NO";
 	
 	for (i = 0; i < n; i++)
 	{
@@ -30,7 +31,8 @@ int main()
 			return 0;
 		}
 	}
-
+	
+	cout << "NO";
     return 0;
 }
 
