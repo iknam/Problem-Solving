@@ -41,14 +41,14 @@ int main()
 	{
 		cin >> i[l] >> j[l] >> k[l];
 		//scanf("%d %d %d", &i[l], &j[l], &k[l]);
-
+		// sort() > stable_sort() > partial_sort()
 		if (k[l] == 1)
 		{
-			sort(S.begin() + i[l] - 1, S.end() - (n - j[l]));
+			partial_sort(S.begin() + i[l] - 1, S.end() - (n - j[l]), S.end() - (n - j[l]));
 		}
 		else if (k[l] == 0)
 		{
-			sort(S.begin() + i[l] - 1, S.end() - (n - j[l]), greater<int>());
+			partial_sort(S.begin() + i[l] - 1, S.end() - (n - j[l]), S.end() - (n - j[l]), greater<int>());
 		}
 	}
 
