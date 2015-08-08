@@ -21,8 +21,8 @@ using namespace std;
 int main()
 {
 	string S;
-	vector<int> i, j, k;
-	long long int n, q, l;
+	vector<long long> i, j, k;
+	long long n, q, l;
 	// S able to S[0], S[1]?
 
 	cin >> n >> q >> S;
@@ -30,26 +30,33 @@ int main()
 	//int i[q], j[q];
 
 	//bool k[q];
-
+	// int *i = new int[q];
+	// int *j = new int[q];
+	// int *k = new int[q];
 	i.resize(q);
 	j.resize(q);
 	k.resize(q);
 	
 	for (l = 0; l < q; l++)
 	{
-		scanf("%d %d %d", &i[l], &j[l], &k[l]);
+		cin >> i[l] >> j[l] >> k[l];
+		//scanf("%d %d %d", &i[l], &j[l], &k[l]);
 
 		if (k[l] == 1)
 		{
 			sort(S.begin() + i[l] - 1, S.end() - (n - j[l]));
 		}
-		else
+		else if (k[l] == 0)
 		{
 			sort(S.begin() + i[l] - 1, S.end() - (n - j[l]), greater<int>());
 		}
 	}
 
 	cout << S;
+
+	/*delete i;
+	delete j;
+	delete k;*/
 
 	return 0;
 }
