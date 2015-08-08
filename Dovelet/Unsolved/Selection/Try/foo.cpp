@@ -19,7 +19,7 @@ int main()
 	int i;
 	string str;
 
-	while (getline(cin, str))
+	while (cin >> str)
 	{
 		for (i = 0; i < str.length(); i++)
 		{

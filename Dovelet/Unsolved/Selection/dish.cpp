@@ -25,10 +25,12 @@ int main()
 			// for(;~;~) if (str[]=='0') cout << "push" else "pop"
 			if (dish.push(elem[j]) == 1)
 			{
+				push();
 				ans_str[i] = "push";
 			}
 			else if (dish.pop() == 1)
 			{
+				pop();
 				ans_str[i] = "pop";
 			}
 		}
@@ -37,34 +39,7 @@ int main()
 	{
 		cout << ans_str[i] << endl;
 	}
-	/*
-	dish.push(elem[0]);
-	dish.push('b');
-	dish.pop();
-	dish.pop();
-	dish.push('c');
-	// dish.pop();
-	dish.push('d');
-	// dish.pop();
-	*/
-	/*while(!dish.empty())
-	{
-		cout << dish.top();
-		dish.pop();
-	}*/
 
-	//cout << dish.top();
-	/*dish.push(str[0]);
-	  dish.push(str[1]);
-	  dish.push(str[2]);
-	  dish.push(str[3]);*/
-	// dish.push('a' + 1);	
-	// if (dish.top == str[0] && dish~~ == str[1] && dish && dish) all matching?
-	//for () // use 4-for?
-	//dish.pop();
-	//dish.pop();
-
-	// cout << dish.top();
 	delete [] ans_str;
 	return 0;
 }
