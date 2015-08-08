@@ -1,5 +1,6 @@
 #!/bin/bash
 git add -A
 git commit -m "$*"
+git merge
 git pull origin master
 git push -u origin master
