@@ -16,9 +16,9 @@ int main()
 	for (i = 0; i < gemnum; i++)
 	{
 		cin >> gem[i].first >> gem[i].second;
+		gem[i].second / gem[i].first //prior
 	}
 
-	gem[i].second / gem[i].first //prior
 
 	cout << fixed;
 	cout << setprecision(2) << ans;

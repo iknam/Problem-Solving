@@ -6,17 +6,17 @@ using namespace std;
 
 int main()
 {
-    int i, N, M, ans = 0, sum = 0;
-    vector< pair<int, int> > PA;
-    
-    cin >> N >> M;
-    
-    PA.resize(M);
-    
-    for (i = 0; i < M; i++)
-    {
-        cin >> PA[i].first >> PA[i].second;
-    }
+	int i, N, M, ans = 0, sum = 0;
+	vector< pair<int, int> > PA;
+
+	cin >> N >> M;
+
+	PA.resize(M);
+
+	for (i = 0; i < M; i++)
+	{
+		cin >> PA[i].first >> PA[i].second;
+	}
 
 	sort(PA.begin(), PA.end());
 
@@ -31,6 +31,6 @@ int main()
 	}
 
 	cout << ans;
-	
-    return 0;
+
+	return 0;
 }
