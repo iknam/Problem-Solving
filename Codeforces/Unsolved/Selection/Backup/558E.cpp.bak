@@ -4,7 +4,7 @@
 #include <queue>
 #include <cmath>
 #include <math.h>
-#include <cstring>
+#include <string>
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -20,12 +20,25 @@ using namespace std;
 
 int main()
 {
-	string S;
+	string str;
+	//vector<string> str;
 	vector<long long> i, j, k;
+	//multiset<string> str;
 	long long n, q, l;
 	// S able to S[0], S[1]?
 
-	cin >> n >> q >> S;
+	cin >> n >> q >> str;
+
+	//str.resize(n);
+	// string *str = new string[n];
+	
+	//cin << str;
+
+	//str.resize(n);
+
+	//cin >> str;
+
+	//char *chstr = new char[n];
 
 	//int i[q], j[q];
 
@@ -37,6 +50,8 @@ int main()
 	j.resize(q);
 	k.resize(q);
 	
+	//	(S.begin(), S.end());
+
 	for (l = 0; l < q; l++)
 	{
 		cin >> i[l] >> j[l] >> k[l];
@@ -44,15 +59,17 @@ int main()
 		// sort() > stable_sort() > partial_sort()
 		if (k[l] == 1)
 		{
-			partial_sort(S.begin() + i[l] - 1, S.end() - (n - j[l]), S.end() - (n - j[l]));
+			sort(str.begin() + i[l] - 1, str.end() - (n - j[l]));
+			// sort(chstr.begin() + i[l] - 1, chstr.end() - (n - j[l]));
 		}
 		else if (k[l] == 0)
 		{
-			partial_sort(S.begin() + i[l] - 1, S.end() - (n - j[l]), S.end() - (n - j[l]), greater<int>());
+			sort(str.begin() + i[l] - 1, str.end() - (n - j[l]), greater<int>());
+			// sort(chstr.begin() + i[l] - 1, chstr.end() - (n - j[l]), greater<int>());
 		}
 	}
 
-	cout << S;
+	cout << str;
 
 	/*delete i;
 	delete j;
