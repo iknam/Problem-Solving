@@ -1,0 +1,2 @@
+chickens = raw_input("How many chickens does it take to cross the road?\n")
+print name
