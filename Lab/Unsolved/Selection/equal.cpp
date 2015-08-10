@@ -1,16 +1,14 @@
 #include <iostream>
-#include <climits>
 
 using namespace std;
 
 int main()
 {
-	int A, B, N;
+	int a = 1, b = 2, c = 3;
 
-	cin >> A >> B >> N;
+	a = b = c;
 
-
-
+	cout << a << " " << b << " " << c;
 
     return 0;
 }

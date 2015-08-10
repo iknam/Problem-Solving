@@ -1,0 +1,5 @@
+#!/bin/bash
+#cp ~/PS/Tool/default.cpp ~/PS/Tool/labtemp.cpp
+cp "$*" ~/PS/Tool/templab.cpp
+vi ~/PS/Tool/templab.cpp
+cp ~/PS/Tool/templab.cpp ~/PS/Tool/templab.cpp.bak
