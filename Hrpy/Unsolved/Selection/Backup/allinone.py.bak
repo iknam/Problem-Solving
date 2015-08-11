@@ -1,10 +1,9 @@
-import sys
+a = input()
+b = input()
 
-in_val = input()
+temp = a
+a = b
+b = temp
 
-for i in range(1,in_val):
-    for j in range(0,i):
-        #print(i),
-        sys.stdout.write(str(i))
-    if i < in_val - 1: 
-        sys.stdout.write("\n")
+print(a)
+print(b)
