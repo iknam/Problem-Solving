@@ -1,0 +1,7 @@
+for i in range(1,int(input())):
+    for j in range(0,i):
+        print(i),
+        #print "#"
+        #'{}'.format(str(i))
+    #print("\n")
+        #print("asofdf")

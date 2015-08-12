@@ -1,0 +1,14 @@
+list = []
+
+for i in range(1,int(input())):
+    for j in range(0,i):
+        list.append(j)
+        #print "#"
+        #'{}'.format(str(i))
+    #print("\n")
+        #print("asofdf")
+
+for i in range(1,int(input())):
+    for j in range(0,i):
+        print(list[j])
+    #print("\n")

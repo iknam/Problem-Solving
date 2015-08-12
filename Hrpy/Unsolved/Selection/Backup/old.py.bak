@@ -1,0 +1,2 @@
+dic = {'name':"name", 'average':"average"}
+print(dic['name'])
