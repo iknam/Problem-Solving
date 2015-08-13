@@ -2,7 +2,7 @@ S = str(input())
 ic = str(input())
 
 i = int(ic[:len(ic) - 2])
-c = str(ic[len(ic)])
+c = str(ic[len(ic) - 1])
 
 ans = str("")
 ans = S[0:i]
