@@ -6,9 +6,9 @@ for i in range(0, n):
     score2 = int(input())
     score3 = int(input())
     average = (score1 + score2 + score3) / 3
-    dic = {'name': average}
+    dic = {'name':name, 'average':average}
     #dic['name'] = average
     print(dic['name'])
-    save = 'name'
+    #save = 'name'
     #print(dic['name'])
     #print("{:.2f}".format(dic['average']))
