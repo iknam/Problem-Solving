@@ -1,0 +1,3 @@
+cp "$*".py ./Backup/"$*".py.bak
+cp ~/PS/Tool/default.py "$*".py
+vi "$*".py

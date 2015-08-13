@@ -1,2 +1,6 @@
 #!/bin/bash
-python "$*"
+if [ $2 = ""]; then
+python3 "$*"
+elif [ $2 = "-p" ]; then
+python3 ~/PS/Tool/templab.py
+fi
