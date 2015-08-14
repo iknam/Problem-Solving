@@ -1,12 +1,9 @@
-import builtins
-
-#L = list(T)
-
-T = (1, 2)
+#import builtins
 
 N = int(input())
 
-#for i in range(0, N):
-    #T + (int(input()))
-#T = tuple(L)
+T = ()
+
+for i in range(0, N):
+    T += int(input()),
 print (hash(T))

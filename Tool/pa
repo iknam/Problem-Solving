@@ -1,3 +1,4 @@
+#!/bin/bash
 cp "$1" ~/PS/Tool/templab.py
 vi ~/PS/Tool/templab.py
 cp ~/PS/Tool/templab.py ~/PS/Tool/templab.py.bak
