@@ -1,15 +1,15 @@
-#from operator import itemgetter
-import sys
+from operator import itemgetter
 
 dic = {}
 
 n = int(input())
 
-average = 0
-
 for i in range(0, n):
     name = str(input())
-    average = (int(input() + input() + input()) // 3) - 39
+    score1 = int(input())
+    score2 = int(input())
+    score3 = int(input())
+    average = (score1 + score2 + score3) // 3
     dic[name] = average
     #print("{:.2f}".format(dic['average']))
     #sorted(dic.iteritems(), key = itemgetter(1), reverse=True)

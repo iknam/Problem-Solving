@@ -10,8 +10,17 @@ int main()
 
     if (str[8] == 'P')
     {
-        str[0] += 1;
-        str[1] += 2;
+        if (str[0] != 2 && str[1] != 3)
+        {
+            str[0] += 1;
+            str[1] += 2;
+        }
+        else if (str[0] == 2 && str[1] == 3)
+        {
+            str[0] = 0;
+            str[1] = 0;
+        }
+            
     }
 
     str.resize(8);
