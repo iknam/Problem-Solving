@@ -2,13 +2,23 @@
 
 using namespace std;
 
-node *head, *tail
+node *head, *tail;
 
 void Preorder(node *root)
 {
+    struct node
+    {
+        int data;
+        node* left;
+        node* right;
+    };
+    
+    //root -> data = data;
+    
     if (root != tail)
     {
-        cout << Preorder(root -> left) << " ";
-        cout << Preorder(root -> right) << " ";
+        cout << root -> data << " ";
+        Preorder(root -> left);
+        Preorder(root -> right);
     }
 }
