@@ -7,37 +7,30 @@ using namespace std;
 int main()
 {
     int i, j, N, K;
-    string S = {"ab", "zx"};
-    regex reg("[a-z] + \\");
+    string S;
 
-    smatch m;
-
-    if (regex_match(S, m, reg))
-    {
-        for (auto &sm : m)
-            cout << sm << endl;
-    }
-
-    //cin >> N >> S >> K;
-
-    /*for (const auto &str : S)
-    {
-        cout << str << ": " << regex_match(str, reg) << endl;
-    }*/
+    cin >> N >> S >> K;
 
     for (i = 0; i < N; i++)
     {
-        for (j = 0; j < K; j++)
+        if ((S[i] > 'a' && S[i] < 'z') || (S[i] > 'A' && S[i] < 'Z'))
         {
-            /*if (S[i] != 'a')
-            {
-                //S[i]++;
-            }*/
+            S[i] += K;
         }
+        else if (S[i] > (char)('z' - K))
+        {
+            cout << (char)('z' - K) << endl;
+            S[i] = (char)('a' + K - 1);
+            cout << S[i] << endl;
+        }
+        /*if (S[i] > char('Z' - K))
+        {
+            S[i] = (char)('A' + K - 1);
+            cout << S[i] << endl;
+        }*/
     }
 
-    //cout << S;
+    cout << S;
 
     return 0;
 }
-
