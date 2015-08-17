@@ -6,16 +6,24 @@ Node *Insert(Node* head, int data)
 	nextNode = (Node*)malloc(sizeof(Node));
 	
 	insert -> data = data;
-	insert -> next = nullptr;
-	if(head == nullptr) return insert;
+	insert -> next = '\0';
+	if(head == '\0') return insert;
 	else
 	{
 		nextNode = head;
-		while(nextNode -> next != nullptr)
+		while(nextNode -> next != '\0')
 		{
 			nextNode = nextNode -> next;
 		}
 		nextNode -> next = insert;
 		return head;
-	}	
+	}
+/*	insert -> next = tail;
+	
+    insert -> data = data;
+	insert -> next = tail -> next;
+	tail -> next -> insert;
+	//insert = tail;
+
+    return head;*/	
 }
