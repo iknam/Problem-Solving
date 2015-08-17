@@ -46,7 +46,7 @@ int main()
 			//fac += to_string(i * (i - 1));
 		//}
 	}
-	storage = to_string(21004104200402*349038429849)
+	storage = to_string(21004104200402*349038429849);
 
 	cout << storage;
 
