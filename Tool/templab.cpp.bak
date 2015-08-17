@@ -1,38 +1,42 @@
 #include <iostream>
-#include <string>
-#include <regex>
+#include <cstring>
+#include <cstdlib>
 
 using namespace std;
 
 int main()
 {
-    int i, j, N, K;
-    string S;
+	//vector<  > fac;
+	int N;
+	long long i;
+	//char *ano = 13242341431234123412341234411;
+	string fac = "1";
+	/*fac = to_string(ano);
+	cout << fac;*/
+		//atoi(fac.c_str());
+/*	
+	cin >> N;
+	//
+	//int *sub = 422343;
+	//cout << sub;
+	for (i = N; i > 1; i--)
+	{
+		//cout << int((fac[i]))*int((fac[i-i])) << endl;
+		//if (strlen(to_string(ano)) < 19)
+		//{
+			 //fac = to_string(i*atoi(fac.c_str()));
+		fac = to_string(i*(stoi(fac-1));	 
+		cout << fac << endl;
+		//}
+		//string += ano;
+		//if (fac.length() < 19)
+		//{
+			//fac += to_string(i * (i - 1));
+		//}
+	}
+*/
+	cout << stoi(fac);
 
-    cin >> S;
-
-    if (S[0] == (char)('z' - 1)) cout << "work";
-
-/*    for (i = 0; i < N; i++)
-    {
-        if ((S[i] > 'a' && S[i] < 'z') || (S[i] > 'A' && S[i] < 'Z'))
-        {
-            S[i] += K;
-        }
-        else if (S[i] > (char)('z' - K))
-        {
-            cout << (char)('z' - K) << endl;
-            S[i] = (char)('a' + K - 1);
-            cout << S[i] << endl;
-        }
-        if (S[i] > char('Z' - K))
-        {
-            S[i] = (char)('A' + K - 1);
-            cout << S[i] << endl;
-        }
-    }*/
-
-    cout << S;
-
-    return 0;
+	//cout << ano;
+	return 0;
 }

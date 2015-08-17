@@ -11,11 +11,10 @@ int main()
 	long long i;
 	//char *ano = 13242341431234123412341234411;
 	string fac = "1";
-	string storage = "";
-
 	/*fac = to_string(ano);
 	cout << fac;*/
 		//atoi(fac.c_str());
+	
 	cin >> N;
 	//
 	//int *sub = 422343;
@@ -26,13 +25,14 @@ int main()
 		//if (strlen(to_string(ano)) < 19)
 		//{
 			 //fac = to_string(i*atoi(fac.c_str()));
-		fac = to_string(i * atoi(fac.c_str()));
-		cout << fac.length() << endl;
-		if (fac.length() > 9)
-		{
-			storage += fac;
-			fac = "";
-		}
+		fac = to_string(i * (i - 1));
+		if fac < 20
+		str += fac
+		fac oper
+		if
+		str += fac
+		fac oper
+		cout << fac << endl;
 		//}
 		//string += ano;
 		//if (fac.length() < 19)
@@ -41,7 +41,7 @@ int main()
 		//}
 	}
 
-	cout << storage;
+	cout << fac;
 
 	//cout << ano;
 	return 0;

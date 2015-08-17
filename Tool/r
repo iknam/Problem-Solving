@@ -1,8 +1,8 @@
 #!/bin/bash
-#if [ $2 = ""]; then
+if [ $2 = ""]; then
 g++ -std=c++11 "$*"
 ./a.out
-#elif [ $1 = 'c' ]; then
-#g++ -std=c++11 ~/PS/Tool/templab.cpp
-#./a.out
-#fi
+elif [ $1 = 'r' ]; then
+g++ -std=c++11 ~/PS/Tool/templab.cpp
+./a.out
+fi
