@@ -30,7 +30,7 @@ int main()
 		cout << fac.length() << endl;
 		if (fac.length() > 9)
 		{
-			storage += fac;
+			storage = fac ;
 			fac = "";
 		}
 		//}
