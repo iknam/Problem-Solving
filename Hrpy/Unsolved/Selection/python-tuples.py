@@ -6,4 +6,4 @@ T = ()
 
 for i in range(0, N):
     T += int(input()),
-print (hash(T))
+print (T)

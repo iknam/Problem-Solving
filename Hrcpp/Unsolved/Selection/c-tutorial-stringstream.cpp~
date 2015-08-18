@@ -1,0 +1,23 @@
+#include <iostream>
+#include <sstream>
+
+using namespace std;
+
+int main()
+{
+	int i;
+	string str;
+	
+	cin >> str;
+
+	stringstream ss(str);
+	char ch;
+	int a[100];
+    for (i = 0; i < 3; i++)
+    {
+	   ss >> ch >> a[i];
+       cout << a[i] << endl;
+    }
+
+    return 0;
+}
