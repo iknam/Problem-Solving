@@ -10,12 +10,21 @@ vector<int> parseInts(string str) {
 	stringstream ss(str);
 	char ch;
 	int i = 0;
+	
+	data[0] = ss >> data;
 
 	while (!ss.eof())
 	{
 		ss >> data[i];
 		//modify
-		//if (!ss.eof()) ss >> ch;
+		if (ch != EOF) ss >> ch;
+		i++;
+	}
+	
+	i = 0;
+	
+	while (data[i] != 0)
+	{
 		i++;
 	}
 	
