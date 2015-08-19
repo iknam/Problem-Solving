@@ -14,7 +14,8 @@ vector<int> parseInts(string str) {
 	while (!ss.eof())
 	{
 		ss >> data[i];
-		if (!ss.eof()) ss >> ch;
+		//modify
+		//if (!ss.eof()) ss >> ch;
 		i++;
 	}
 	
