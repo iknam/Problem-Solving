@@ -10,10 +10,25 @@ vector<int> parseInts(string str) {
 	stringstream ss(str);
 	char ch;
 	int i = 0;
+	
+	data[0] = ss >> data;
 
 	while (!ss.eof())
 	{
+<<<<<<< HEAD:Hrcpp/Solved/c-tutorial-stringstream.cpp
 		ss >> data[i] >> ch;
+=======
+		ss >> data[i];
+		//modify
+		if (ch != EOF) ss >> ch;
+		i++;
+	}
+	
+	i = 0;
+	
+	while (data[i] != 0)
+	{
+>>>>>>> 43d3bba8813987408deca59e212d0db3f8647b54:Hrcpp/Unsolved/Selection/c-tutorial-stringstream.cpp
 		i++;
 	}
 	
