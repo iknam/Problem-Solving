@@ -1,0 +1,6 @@
+list = {}
+
+list[0, 0, 0] = input()
+#list.append(0, int(input())
+list[0, 0, 0] = 4
+print(list[0, 0, 0])
