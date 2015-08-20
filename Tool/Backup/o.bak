@@ -1,0 +1,6 @@
+#!/bin/bash
+g++ -std=c++11 -stdlib=libc++ "$*"
+./a.out < ~/PS/Tool/in > ~/PS/Tool/out
+cat ~/PS/Tool/in
+cat ~/PS/Tool/out
+

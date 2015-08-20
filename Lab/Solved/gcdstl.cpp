@@ -1,11 +1,10 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-	double x = int;
-
-    return 0;
+	cout << __gcd(4, 8);
+	return 0;
 }
-

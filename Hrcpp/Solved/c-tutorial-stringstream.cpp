@@ -5,7 +5,7 @@ using namespace std;
 
 vector<int> parseInts(string str) {
 	// Complete this function
-	vector<int> data(100);
+	vector<int> data(1000000000);
 
 	stringstream ss(str);
 	char ch;
@@ -13,14 +13,12 @@ vector<int> parseInts(string str) {
 
 	while (!ss.eof())
 	{
-		ss >> data[i];
-		//modify
-		//if (!ss.eof()) ss >> ch;
+		ss >> data[i] >> ch;
 		i++;
 	}
 	
 	data.resize(i);
-
+	
 	return data;
 }
 
